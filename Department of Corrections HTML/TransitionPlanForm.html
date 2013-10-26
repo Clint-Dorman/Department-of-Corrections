@@ -1,0 +1,844 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="Transition.css">
+	<!--[if IE]>
+		<link rel="stylesheet" href="ie.css" type="text/css" />
+	<![endif]-->
+	
+	<script type="text/javascript">
+  	document.getElementById('date').value = Date();
+	</script>
+	
+</head>
+
+<body>
+
+
+	<div id="container">
+	
+		<div id="header">
+		Transition Plan
+		</div><!--End header-->
+<form name="input" action="linkgoeshere.php" method="get">		
+	<div id="section1">
+		
+		<p>Last Name: <input type="text" name="lastname"></p>
+		
+
+		<p>First Name: <input type="text" name ="firstname"></p>
+
+
+		<p>MI: <input type="text" name ="middleinitial" maxlength="1" size="1"></p>
+
+		
+		<p>DOC Number: <input type="number" name="DOCnumber"></p>
+
+
+		<p>SSN: <input type="text" name="ssn" maxlength="9" size="9"></p>
+
+		<p id="section1radio">
+		<input type="radio" name="sex" value="male">Male<br>
+		<input type="radio" name="sex" value="female">Female</p>
+
+
+		<p>Date of Birth: <input type="text" name="DOB" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+
+		<p>Today's Date: <input type="text" name="dateToday" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+	
+		<p>Name of Facility: <input type="text" name ="nameoffacility"></p>
+
+		<p>Person Completing Form: <input type="text" name="personCompletingForm"></p>
+
+		<p>Current Status <input type="text" name ="currentstatus"></p>
+
+		<p id="section1radio">
+		<input type="radio" name="current" value="pretrialdetainee">Pretrial Detainee<br>
+		<input type="radio" name="current" value="sentencedinmate">Sentenced Inmate</p>
+		
+		<p>Date of Admission: <input type="text" name="DOA" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>	
+
+		<p>Expected Release Date: <input type="text" name="ERD" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+	</div><!--End Section1-->
+
+		<div id="header2">
+		Interventions Needed
+		</div><!--End header2-->
+			
+	<div id="section2">
+		
+		<p id="section2radio" ><br />
+		Social Security Card: <input type="radio" name="SSC" value="SSCYes">Yes
+		<input type="radio" name="SSC" value="SSCNo">No</p>
+		
+		<p id="section2radio" ><br />
+		Veteran Identification Card: <input type="radio" name="VID" value="VIDYes">Yes
+		<input type="radio" name="VID" value="VIDNo">No</p>
+		
+		<p id="section2radio" ><br />
+		Birth Certificate: <input type="radio" name="BC" value="BCYes">Yes
+		<input type="radio" name="BC" value="BCNo">No</p>
+		
+		<p id="section2radio" ><br />
+		Passport: <input type="radio" name="passport" value="passportYes">Yes
+		<input type="radio" name="passport" value="PassportNo">No</p>
+		
+		<p id="section2radio" ><br />
+		Alien Registration Card: <input type="radio" name="ARC" value="ARCYes">Yes
+		<input type="radio" name="ARC" value="ARCNo">No</p>
+
+		<p id="section2radio" ><br />
+		Valid State ID/Driver's License: <input type="radio" name="license" value="licenseYes">Yes
+		<input type="radio" name="license" value="licenseNo">No</p>
+		
+		<p id="section2radio" ><br />
+		Picture Identification: <input type="radio" name="picture" value="pictureYes">Yes
+		<input type="radio" name="picture" value="pictureNo">No</p>
+		
+		<p id="section2radio" ><br />
+		Military Discharge Papers: <input type="radio" name="military" value="militaryYes">Yes
+		<input type="radio" name="military" value="militaryNo">No</p>
+	
+		<p id="section2radio" ><br />
+		Certificate of Naturalization: <input type="radio" name="naturalization" value="naturalizationYes">Yes
+		<input type="radio" name="passport" value="naturalizationNo">No</p>
+
+		<p id="section2radio" ><br />
+		High School Diploma/GED Certificate: <input type="radio" name="certificate" value="certificateYes">Yes
+		<input type="radio" name="certificate" value="certificateNo">No</p>
+		
+		<p id="section2radio" ><br />
+		Are any identification documents in inmate's property?: <input type="radio" name="idDoc" value="idDocYes">Yes
+		<input type="radio" name="idDoc" value="idDocNo">No</p>
+		
+		<div id="textarea">
+		<p id="section2box1"><br />If yes, specify the type of documentation:</p> <p id="test"><textarea name="specifyDoc" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea-->
+
+		<div id="textarea2">
+		<p id="section2radio"><br />If no, explain how identification is being obtained: </p> <p id="test"><textarea name="idObtained" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea2-->				
+		
+	</div><!--End Section2-->
+	
+			<div id="header3">
+			Benefit Eligibility
+			</div><!--End header3-->
+			
+	<div id="section3">
+	
+
+		<p id="section3radio" ><br />
+		Public Assistance: <input type="radio" name="pubAssist" value="pubAssistYes">Yes
+		<input type="radio" name="pubAssist" value="pubAssistNo">No</p>
+		
+		<p id="section3radio" ><br />
+		Food Stamps: <input type="radio" name="foodStamps" value="foodStampsYes">Yes
+		<input type="radio" name="foodStamps" value="foodStampsNo">No</p>
+		
+		<p id="section3radio" ><br />
+		Medicaid: <input type="radio" name="medicaid" value="medicaidYes">Yes
+		<input type="radio" name="medicaid" value="medicaidNo">No</p>
+		
+		<p id="section3radio" ><br />
+		SSI: <input type="radio" name="SSI" value="SSIYes">Yes
+		<input type="radio" name="SSI" value="SSINo">No</p>
+		
+		<p id="section3radio" ><br />
+		SSD: <input type="radio" name="SSD" value="SSDYes">Yes
+		<input type="radio" name="SSD" value="SSDNo">No</p>
+
+		<p id="section3radio" ><br />
+		Veteran: <input type="radio" name="veteran" value="veteranYes">Yes
+		<input type="radio" name="veteran" value="veteranNo">No</p>	
+		
+	</div><!--End Section3-->
+	
+			<div id="header4">
+			Transportation
+			</div><!--End header4-->
+			
+	<div id="section4">
+		
+		
+		<p>(If Known)-Time of Release: <input type="text" name="timeRelease"></p>
+		
+		<p id="section4radio" ><br />
+		Will Someone Pick Up the Inmate?: <input type="radio" name="inmatePickup" value="inmatePickupYes">Yes
+		<input type="radio" name="inmatePickup" value="inmatePickupNo">No</p>
+		
+		<p id="section4p">If Yes, Who?: <input type="text" name="inmatehasPickup"></p>
+
+		<div id="textarea3">
+		<p id="section4radio"><br />If No, How Will the Inmate Get Home?</p> <p id="test"><textarea name="inmateHome" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea3-->
+		
+	</div><!--End Section4-->
+	
+			<div id="header5">
+			Housing
+			</div><!--End header5-->
+			
+	<div id="section5">
+		
+		
+		<p>Address at Release: <input type="text" name="addressatRelease" size="40"></p>
+		
+		<p>Apt #: <input type="text" name="aptNumber" size="5"></p>
+		
+		<p>City: <input type="text" name="city"></p>
+		
+		<p>State: <input type="text" name="state" size="10"></p>
+
+		<p>Zip Code: <input type="text" name="addressatRelease" size="10"></p>
+		
+		<p>Home Phone: <input type="text" name="homePhone" size="12" maxlength="10"></p>
+		
+		<p>Cell Phone: <input type="text" name="cellPhone" size="12" maxlength="10"></p>
+		
+		<p>Work Phone: <input type="text" name="workPhone" size="12" maxlength="10"></p>
+		
+		<p>Residents in House: <input type="text" name="residents" size="60"></p>
+		
+		<p id="section5radio"><br />
+		Does the Inmate Expect to be Released to Known Housing: <input type="radio" name="knownhousing" value="knownHousingYes">Yes
+		<input type="radio" name="knownhousing" value="knownHousingNo">No</p>
+		
+		<p id="section5radio"><br />
+		Does the Inmate Expect to be Released to a Homeless Shelter?: <input type="radio" name="homelessShelter" value="homelessShelterYes">Yes
+		<input type="radio" name="homelessShelter" value="homelessShelterNo">No</p>
+		
+		<p>Type of Housing Assistance Required: <input type="text" name="housingAssistance" size="60"></p>
+		
+
+	</div><!--End Section5-->
+	
+			<div id="header6">
+			Medical/Mental Health/Dental
+			</div><!--End header6-->
+			
+	<div id="section6">
+	
+
+		<p id="section6radio" ><br />
+		Primary Health Care Needed: <input type="radio" name="primaryhealthCare" value="primaryHealthYes">Yes
+		<input type="radio" name="primaryhealthCare" value="primaryHealthNo">No</p>
+		
+		<p id="section6radio" ><br />
+		Medical Specialist Needed: <input type="radio" name="medicalSpecialist" value="specialistYes">Yes
+		<input type="radio" name="medicalSpecialist" value="specialistNo">No</p>
+		
+		<p id="section6radio" ><br />
+		Mental Health Provider Needed: <input type="radio" name="mentalHealth" value="mentalHealthYes">Yes
+		<input type="radio" name="mentalHealth" value="mentalHealthNo">No</p>
+		
+		<p id="section6radio" ><br />
+		Medication Needed: <input type="radio" name="medication" value="medicationYes">Yes
+		<input type="radio" name="medication" value="medicationNo">No</p>
+		
+		<p>Date of Last Full Physical: <input type="text" name="lastFullPhysical" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>	
+		
+	
+	</div><!--End Section 6-->
+	
+			<div id="header7">
+			Substance Abuse Counselling/Treatment
+			</div><!--End header7-->
+			
+	<div id="section7">
+	
+
+		<p id="section7radio" ><br />
+		Alcohol Counselling/Treatment Needed: <input type="radio" name="alcoholCounselling" value="alcoholCounsellingYes">Yes
+		<input type="radio" name="alcoholCounselling" value="alcoholCounsellingNo">No</p>
+		
+		<p id="section7radio" ><br />
+		Substance Abuse Counselling/Treatment Needed: <input type="radio" name="substanceCounselling" value="substanceCounsellingYes">Yes
+		<input type="radio" name="substanceCounselling" value="substanceCounsellingNo">No</p>
+		
+		<p id="section7radio" ><br />
+		Level of Care Required: <input type="radio" name="careRequired" value="Outpatient">Outpatient
+		<input type="radio" name="careRequired" value="Residential">Residential</p>
+		
+	
+	</div><!--End Section 7-->
+	
+			<div id="header8">
+			Family
+			</div><!--End header8-->
+			
+	<div id="section8">
+	
+
+		<p id="section8radio" ><br />
+		Will Have Custody of Children: <input type="radio" name="custodyChildren" value="custodyChildrenYes">Yes
+		<input type="radio" name="custodyChildren" value="custodyChildrenNo">No</p>
+		
+		<p>If Yes, How Many?: <input type="text" name="numberChildren" size="2"></p>
+
+		<p>Ages?: <input type="text" name="childrenAges"></p>	
+		
+		<p id="section8radio" ><br />
+		Family Counselling Needed: <input type="radio" name="familyCounselling" value="familyCounsellingYes">Yes
+		<input type="radio" name="familyCounselling" value="familyCounsellingNo">No</p>
+		
+	
+	</div><!--End Section 8-->
+	
+			<div id="header9">
+			Education
+			</div><!--End header9-->
+			
+	<div id="section9">
+	
+
+		<p id="section9radio" ><br />
+		Has GED: <input type="radio" name="GED" value="GEDYes">Yes
+		<input type="radio" name="GED" value="GEDNo">No</p>
+		
+		<p id="section9radio" ><br />
+		Has HighSchool Diploma: <input type="radio" name="highschoolDiploma" value="highschoolDiplomaYes">Yes
+		<input type="radio" name="highschoolDiploma" value="highschoolDiplomaNo">No</p>
+		
+		<p id="section9radio" ><br />
+		Continuing Education Needed: <input type="radio" name="continueEducation" value="continueEducationYes">Yes
+		<input type="radio" name="continueEducation" value="continueEducationNo">No</p>
+		
+	
+	</div><!--End Section 9-->
+	
+			<div id="header10">
+			Employment
+			</div><!--End header10-->
+			
+	<div id="section10">
+	
+
+		<p id="section10radio" ><br />
+		Job Skills Training Needed: <input type="radio" name="jobSkills" value="jobSkillsYes">Yes
+		<input type="radio" name="jobSkills" value="jobSkillsNo">No</p>
+		
+		<p>Area of Interest: <input type="text" name="areaofInterest"></p>
+		
+		<p id="section10radio" ><br />
+		Job Placement Needed: <input type="radio" name="jobPlacement" value="jobPlacementYes">Yes
+		<input type="radio" name="jobPlacement" value="jobPlacementNo">No</p>
+		
+		<p>Special Skills: <input type="text" name="specialSkills"></p>
+		
+	
+	</div><!--End Section 10-->
+	
+			<div id="header11">
+			Financial Obligations
+			</div><!--End header11-->
+			
+	<div id="section11">
+	
+		
+		<p>Court: <input type="text" name="court"></p>
+		
+		<p>Child Support: <input type="text" name="childSupport"></p>
+		
+		<p>Medical: <input type="text" name="medical"></p>
+		
+		<p>Civil: <input type="text" name="civil"></p>
+		
+		<p>Other: <input type="text" name="other1"></p>
+		
+		<p>Other: <input type="text" name="other2"></p>
+		
+	
+	</div><!--End Section11-->
+	
+			<div id="header12">
+			In-Jail Program Participation
+			<br />
+			</div><!--End header12-->
+			
+	<div id="section12">
+	
+		
+		<p id="section12radio" ><br />
+		AA/NA: <input type="radio" name="AANA" value="AANAYes">Yes
+		<input type="radio" name="AANA" value="AANANo">No
+		<input type="radio" name="AANA" value="AANANA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="AANAReferral" value="AANAReferral"></p>
+		
+		<p id="section12radio" ><br />
+		Anger Management: <input type="radio" name="angerManagement" value="angerManagementYes">Yes
+		<input type="radio" name="angerManagement" value="angerManagementNo">No
+		<input type="radio" name="angerManagement" value="angerManagementNA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="angerManagementReferral" value="angerManagementReferral"></p>
+		
+		<p id="section12radio" ><br />
+		Cognitive Behavioral Change: <input type="radio" name="behavioral" value="behavioralYes">Yes
+		<input type="radio" name="behavioral" value="behavioralYes">No
+		<input type="radio" name="behavioral" value="behavioralNA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="behavioralReferral" value="behavioralReferral"></p>
+		
+		<p id="section12radio" ><br />
+		Domestic Violence: <input type="radio" name="domestic" value="domesticYes">Yes
+		<input type="radio" name="domestic" value="domesticNo">No
+		<input type="radio" name="domestic" value="domesticNA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="domesticReferral" value="domesticReferral"></p>
+		
+		<p id="section12radio" ><br />
+		Education: <input type="radio" name="education" value="domesticYes">Yes
+		<input type="radio" name="domestic" value="domesticNo">No
+		<input type="radio" name="domestic" value="domesticNA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="domesticReferral" value="domesticReferral"></p>
+		
+		<p id="section12radio" ><br />
+		Employment Skills: <input type="radio" name="employmentSkills" value="employmentSkillsYes">Yes
+		<input type="radio" name="employmentSkills" value="employmentSkillsNo">No
+		<input type="radio" name="employmentSkills" value="employmentSkillsNA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="employmentSkills" value="employmentSkills"></p>
+		
+		<p id="section12radio" ><br />
+		Inmate Worker: <input type="radio" name="inmateWorker" value="inmateWorkerYes">Yes
+		<input type="radio" name="inmateWorker" value="inmateWorkerNo">No
+		<input type="radio" name="inmateWorker" value="inmateWorkerNA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="inmateWorkerReferral" value="inmateWorkerReferral"></p>
+		
+		<p id="section12radio" ><br />
+		Parenting: <input type="radio" name="parenting" value="parentingYes">Yes
+		<input type="radio" name="parenting" value="parentingNo">No
+		<input type="radio" name="parenting" value="parentingNA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="parentingReferral" value="parentingReferral"></p>
+		
+		<p id="section12radio" ><br />
+		Religious Studies: <input type="radio" name="religiousStudies" value="religiousStudiesYes">Yes
+		<input type="radio" name="religiousStudies" value="religiousStudiesNo">No
+		<input type="radio" name="religiousStudies" value="religiousStudiesNA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="religiousStudiesReferral" value="religiousStudiesReferral"></p>
+		
+		<p id="section12radio" ><br />
+		Substance Abuse: <input type="radio" name="substanceAbuse" value="substanceAbuseYes">Yes
+		<input type="radio" name="substanceAbuse" value="substanceAbuseNo">No
+		<input type="radio" name="substanceAbuse" value="substanceAbuseNA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="substanceAbuseReferral" value="substanceAbuseReferral"></p>
+		
+		<p id="section12radio" ><br />
+		Other: <input type="radio" name="Other" value="OtherYes">Yes
+		<input type="radio" name="Other" value="OtherNo">No
+		<input type="radio" name="Other" value="OtherNA">N/A</p>
+		
+		<p>Postrelease Referral: <input type="checkbox" name="otherReferral" value="otherReferral"></p>
+		
+	
+	</div><!--End Section 12-->
+
+			<div id="header13">
+			Post-Release Community Referrals
+			<p>Chech each need and then fill out a separate referral for each need.</p>
+			</div><!--End header13-->
+			
+	<div id="section13">
+	
+		
+		<p id="section13radio" ><br />
+		Aging &amp; Disability Services: <input type="radio" name="agingDisability" value="agingDisabilityYes">Yes
+		<input type="radio" name="agingDisability" value="agingDisabilityNo">No</p>
+		
+		<p id="section13radio" ><br />
+		Community Corrections: <input type="radio" name="communityCorrections" value="communityCorrectionsYes">Yes
+		<input type="radio" name="communityCorrections" value="communityCorrectionsNo">No</p>
+		
+		<p id="section13radio" ><br />
+		Domestic Violence: <input type="radio" name="domesticViolence" value="domesticViolenceYes">Yes
+		<input type="radio" name="domesticViolence" value="domesticViolenceNo">No</p>
+		
+		<p id="section13radio" ><br />
+		Drug or Alcohol Treatment: <input type="radio" name="drugoralcoholTreatment" value="drugoralcoholTreatmentYes">Yes
+		<input type="radio" name="drugoralcoholTreatment" value="drugoralcoholTreatmentNo">No</p>
+		
+		<p id="section13radio" ><br />
+		Education: <input type="radio" name="education" value="educationYes">Yes
+		<input type="radio" name="education" value="educationNo">No</p>
+		
+		<p id="section13radio" ><br />
+		Employment: <input type="radio" name="employment" value="employmentYes">Yes
+		<input type="radio" name="employment" value="employmentNo">No</p>
+
+		<p id="section13radio" ><br />
+		Coping Skills - Family/Children: <input type="radio" name="coping" value="copingYes">Yes
+		<input type="radio" name="coping" value="copingNo">No</p>
+
+		<p id="section13radio" ><br />
+		Management of Financial Resources: <input type="radio" name="financialResources" value="financialResourcesYes">Yes
+		<input type="radio" name="financialResources" value="financialResourcesNo">No</p>
+
+		<p id="section13radio" ><br />
+		Food/Clothing: <input type="radio" name="foodClothing" value="foodClothingYes">Yes
+		<input type="radio" name="foodClothing" value="foodClothingNo">No</p>
+
+		<p id="section13radio" ><br />
+		Health Care Benefits: <input type="radio" name="healthcareBenefits" value="healthcareBenefitsYes">Yes
+		<input type="radio" name="healthcareBenefits" value="healthcareBenefitsNo">No</p>
+
+		<p id="section13radio" ><br />
+		Housing: <input type="radio" name="housing" value="housingYes">Yes
+		<input type="radio" name="housing" value="housingNo">No</p>
+
+		<p id="section13radio" ><br />
+		Identification: <input type="radio" name="identification" value="identificationYes">Yes
+		<input type="radio" name="identification" value="identificationNo">No</p>
+
+		<p id="section13radio" ><br />
+		Income/Benefits/Entitlements: <input type="radio" name="IBE" value="IBEYes">Yes
+		<input type="radio" name="IBE" value="IBENo">No</p>
+
+		<p id="section13radio" ><br />
+		Life Skills Training: <input type="radio" name="LST" value="LSTYes">Yes
+		<input type="radio" name="LST" value="LSTNo">No</p>
+
+		<p id="section13radio" ><br />
+		Medical/Dental Care/Local Health Clinic: <input type="radio" name="MDL" value="MDLYes">Yes
+		<input type="radio" name="MDL" value="MDLNo">No</p>
+
+		<p id="section13radio" ><br />
+		Mental Health Care: <input type="radio" name="MHC" value="MHCYes">Yes
+		<input type="radio" name="MHC" value="MHCNo">No</p>
+
+		<p id="section13radio" ><br />
+		Medication Assistance: <input type="radio" name="medicationAssistance" value="medicationAssistanceYes">Yes
+		<input type="radio" name="medicationAssistance" value="medicationAssistanceNo">No</p>
+
+		<p id="section13radio" ><br />
+		Rent Assistance: <input type="radio" name="rentAssistance" value="rentAssistanceYes">Yes
+		<input type="radio" name="rentAssistance" value="rentAssistanceNo">No</p>
+
+		<p id="section13radio" ><br />
+		Social Security: <input type="radio" name="socialSecurity" value="socialSecurityYes">Yes
+		<input type="radio" name="socialSecurity" value="socialSecurityNo">No</p>
+
+		<p id="section13radio" ><br />
+		Transportation: <input type="radio" name="trans" value="transYes">Yes
+		<input type="radio" name="trans" value="transNo">No</p>
+
+		<p id="section13radio" ><br />
+		Unemployment: <input type="radio" name="unemployment" value="unemploymentYes">Yes
+		<input type="radio" name="unemployment" value="unemploymentNo">No</p>
+
+		<p id="section13radio" ><br />
+		Vocational Training: <input type="radio" name="vocational" value="vocationalYes">Yes
+		<input type="radio" name="vocational" value="vocationalNo">No</p>
+
+	
+	</div><!--End Section 13-->
+
+			<div id="header14">
+			1. Referall Type
+			<br />
+			</div><!--End header14-->
+			
+	<div id="section14">
+	
+		
+		<p id="section14radio" ><br />
+		<input type="radio" name="question1" value="inCustody">In-Custody
+		<input type="radio" name="question1" value="atDischarge">At Discharge
+		<input type="radio" name="question1" value="postRelease">Post-Release</p>
+		
+		<p>Agency Referred To: <input type="text" name="agencyReferred"></p>	
+		
+		<p>Contact Phone: <input type="text" name="contactPhone" size="12" maxlength="10"></p>
+
+		<p>Contact Person: <input type="text" name="contactPerson"></p>
+
+		<p>Appointment Date/Time: <input type="text" name="dateTime"></p>
+
+		<p>Location: <input type="text" name="contactPhone"></p>
+		
+		<p id="section14radio" ><br />
+		Referral Faxed/E-mailed: <input type="radio" name="faxEmail" value="faxEmailYes">Yes
+		<input type="radio" name="faxEmail" value="faxEmailYes">No</p>
+		
+		<p>Fax# or E-mail Address: <input type="text" name="faxEmailAddress"></p>
+
+		<p>Reentry Accountability Plan: <input type="text" name="reentryAccount"></p>
+
+		<div id="textarea4">
+		<p><br />My self-defeating behavior that blocks my success with this issue:</p> <p id="test"><textarea name="selfDefeatingBehavior" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea4-->
+
+		<div id="textarea5">
+		<p><br />My behavioral goal to address my issue is:</p> <p id="test"><textarea name="behavioralGoal" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea5-->
+
+		<div id="textarea6">
+		<p id="text6"><br />My action plan to meet the above goal:</p> <p id="test"><textarea name="actionPlan" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea6-->
+
+		<p>Target Completion Date: <input type="text" name="reentryAccount" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+		<p>Completion Date: <input type="text" name="reentryAccount" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+		<div id="textarea7">
+		<p id="text7"><br />Staff action plan to meet the above goal:</p> <p id="test"><textarea name="staffActionPlan" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea7-->		
+	
+		<div id="textarea8">
+		<p><br />Comments:</p> <p id="test"><textarea name="comment1" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea7-->	
+
+	</div><!--End Section 14-->
+
+			<div id="header15">
+			2. Referall Type
+			<br />
+			</div><!--End header15-->
+			
+	<div id="section15">
+	
+		
+		<p id="section15radio" ><br />
+		<input type="radio" name="question1" value="inCustody">In-Custody
+		<input type="radio" name="question1" value="atDischarge">At Discharge
+		<input type="radio" name="question1" value="postRelease">Post-Release</p>
+		
+		<p>Agency Referred To: <input type="text" name="agencyReferred"></p>	
+		
+		<p>Contact Phone: <input type="text" name="contactPhone" size="12" maxlength="10"></p>
+
+		<p>Contact Person: <input type="text" name="contactPerson"></p>
+
+		<p>Appointment Date/Time: <input type="text" name="dateTime"></p>
+
+		<p>Location: <input type="text" name="contactPhone"></p>
+		
+		<p id="section15radio" ><br />
+		Referral Faxed/E-mailed: <input type="radio" name="faxEmail" value="faxEmailYes">Yes
+		<input type="radio" name="faxEmail" value="faxEmailYes">No</p>
+		
+		<p>Fax# or E-mail Address: <input type="text" name="faxEmailAddress"></p>
+
+		<p>Reentry Accountability Plan: <input type="text" name="reentryAccount"></p>
+
+		<div id="textarea4">
+		<p><br />My self-defeating behavior that blocks my success with this issue:</p> <p id="test"><textarea name="selfDefeatingBehavior" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea4-->
+
+		<div id="textarea5">
+		<p><br />My behavioral goal to address my issue is:</p> <p id="test"><textarea name="behavioralGoal" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea5-->
+
+		<div id="textarea6">
+		<p id="text6"><br />My action plan to meet the above goal:</p> <p id="test"><textarea name="actionPlan" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea6-->
+
+		<p>Target Completion Date: <input type="text" name="reentryAccount" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+		<p>Completion Date: <input type="text" name="reentryAccount" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+		<div id="textarea7">
+		<p id="text7"><br />Staff action plan to meet the above goal:</p> <p id="test"><textarea name="staffActionPlan" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea7-->		
+	
+		<div id="textarea8">
+		<p><br />Comments:</p> <p id="test"><textarea name="comment1" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea7-->	
+
+	</div><!--End Section 15-->
+
+			<div id="header16">
+			3. Referall Type
+			<br />
+			</div><!--End header16-->
+			
+	<div id="section16">
+	
+		
+		<p id="section16radio" ><br />
+		<input type="radio" name="question1" value="inCustody">In-Custody
+		<input type="radio" name="question1" value="atDischarge">At Discharge
+		<input type="radio" name="question1" value="postRelease">Post-Release</p>
+		
+		<p>Agency Referred To: <input type="text" name="agencyReferred"></p>	
+		
+		<p>Contact Phone: <input type="text" name="contactPhone" size="12" maxlength="10"></p>
+
+		<p>Contact Person: <input type="text" name="contactPerson"></p>
+
+		<p>Appointment Date/Time: <input type="text" name="dateTime"></p>
+
+		<p>Location: <input type="text" name="contactPhone"></p>
+		
+		<p id="section16radio" ><br />
+		Referral Faxed/E-mailed: <input type="radio" name="faxEmail" value="faxEmailYes">Yes
+		<input type="radio" name="faxEmail" value="faxEmailYes">No</p>
+		
+		<p>Fax# or E-mail Address: <input type="text" name="faxEmailAddress"></p>
+
+		<p>Reentry Accountability Plan: <input type="text" name="reentryAccount"></p>
+
+		<div id="textarea4">
+		<p><br />My self-defeating behavior that blocks my success with this issue:</p> <p id="test"><textarea name="selfDefeatingBehavior" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea4-->
+
+		<div id="textarea5">
+		<p><br />My behavioral goal to address my issue is:</p> <p id="test"><textarea name="behavioralGoal" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea5-->
+
+		<div id="textarea6">
+		<p id="text6"><br />My action plan to meet the above goal:</p> <p id="test"><textarea name="actionPlan" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea6-->
+
+		<p>Target Completion Date: <input type="text" name="reentryAccount" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+		<p>Completion Date: <input type="text" name="reentryAccount" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+		<div id="textarea7">
+		<p id="text7"><br />Staff action plan to meet the above goal:</p> <p id="test"><textarea name="staffActionPlan" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea7-->		
+	
+		<div id="textarea8">
+		<p><br />Comments:</p> <p id="test"><textarea name="comment1" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea7-->	
+
+	</div><!--End Section 16-->
+
+			<div id="header17">
+			4. Referall Type
+			<br />
+			</div><!--End header17-->
+			
+	<div id="section17">
+	
+		
+		<p id="section17radio" ><br />
+		<input type="radio" name="question1" value="inCustody">In-Custody
+		<input type="radio" name="question1" value="atDischarge">At Discharge
+		<input type="radio" name="question1" value="postRelease">Post-Release</p>
+		
+		<p>Agency Referred To: <input type="text" name="agencyReferred"></p>	
+		
+		<p>Contact Phone: <input type="text" name="contactPhone" size="12" maxlength="10"></p>
+
+		<p>Contact Person: <input type="text" name="contactPerson"></p>
+
+		<p>Appointment Date/Time: <input type="text" name="dateTime"></p>
+
+		<p>Location: <input type="text" name="contactPhone"></p>
+		
+		<p id="section17radio" ><br />
+		Referral Faxed/E-mailed: <input type="radio" name="faxEmail" value="faxEmailYes">Yes
+		<input type="radio" name="faxEmail" value="faxEmailYes">No</p>
+		
+		<p>Fax# or E-mail Address: <input type="text" name="faxEmailAddress"></p>
+
+		<p>Reentry Accountability Plan: <input type="text" name="reentryAccount"></p>
+
+		<div id="textarea4">
+		<p><br />My self-defeating behavior that blocks my success with this issue:</p> <p id="test"><textarea name="selfDefeatingBehavior" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea4-->
+
+		<div id="textarea5">
+		<p><br />My behavioral goal to address my issue is:</p> <p id="test"><textarea name="behavioralGoal" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea5-->
+
+		<div id="textarea6">
+		<p id="text6"><br />My action plan to meet the above goal:</p> <p id="test"><textarea name="actionPlan" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea6-->
+
+		<p>Target Completion Date: <input type="text" name="reentryAccount" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+		<p>Completion Date: <input type="text" name="reentryAccount" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+		<div id="textarea7">
+		<p id="text7"><br />Staff action plan to meet the above goal:</p> <p id="test"><textarea name="staffActionPlan" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea7-->		
+	
+		<div id="textarea8">
+		<p><br />Comments:</p> <p id="test"><textarea name="comment1" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea7-->	
+
+	</div><!--End Section 17-->
+
+			<div id="header18">
+			Employment
+			</div><!--End header18-->
+			
+	<div id="section18">
+	
+		<p id="section18radio" ><br />
+		Full plan completed and discussed with inmate?: <input type="radio" name="fullPlanComplete" value="fullPlanCompleteYes">Yes
+		<input type="radio" name="fullPlanComplete" value="fullPlanCompleteNo">No</p>
+		
+		<p id="section18radio" ><br />
+		If no, why?: <input type="radio" name="noWhy" value="inmateRefused">Inmate Refused
+		<input type="radio" name="noWhy" value="courtRelease">Court Release Before Plan Completed
+		<input type="radio" name="noWhy" value="incompleteOther">Incomplete for other reasons</p>
+
+		<div id="textarea9">
+		<p><br />Specify:</p> <p id="test"><textarea name="specifyWhyIncomplete" cols="30" rows="4"></textarea></p>
+		</div><!--End textarea8-->
+		
+	
+	</div><!--End Section 18-->
+
+			<div id="header19">
+			Case Manager/Counselor Information
+			</div><!--End header19-->
+
+	<div id="section19">
+
+		<p>Name of Case Manager/Counselor: <input type="text" name="caseManCounsName"></p>
+
+		<p>Facility: <input type="text" name="facility"></p>
+
+		<p>Inmate Housing Area: <input type="text" name="housingArea"></p>
+
+		<p>Date Memorandum of Agreement Signed: <input type="text" name="dateMemorandumSigned" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+		<p>Date Discharge Plan Completed: <input type="text" name="dateDischargePlan" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+		<p>Case Manager/Counselor (Signature): <input type="text" name="caseManCounsSignature"></p>
+	
+		<p>Phone#: <input type="text" name="caseManCounsPhoneNumber" size="12" maxlength="10"></p>
+
+		<p>Supervisor: <input type="text" name="supervisor"></p>
+
+		<p>Phone#: <input type="text" name="supervisorPhoneNumber"></p>
+
+		<p>E-mail Address: <input type="text" name="supervisorEmailAddress"></p>	
+	
+	</div><!--End Section 19-->
+
+			<div id="header20">
+			Inmate Agreement
+			<p>I have participated in the completion of this transition plan, received a copy of this transition plan, emergency numbers for assistance in the community, and necessary psychiatric referrals (if-necessary).</p>
+			</div><!--End header20-->
+
+	<div id="section20">
+
+		<p>Inmate's Name: <input type="text" name="inmateName"></p>
+
+		<p>Inmate's Signature: <input type="text" name="inmateSignature"></p>
+
+		<p>Today's Date: <input type="text" name="dateToday" maxlength="10" size="12" placeholder="MM/DD/YYYY"></p>
+
+	</div><!--End Section 20-->
+	
+	<div id="submitbutton">
+	<input type="submit" value="Submit" style="width: 150px; height: 50px; font-size: 30px">
+	</div><!--End submitbutton-->
+</form>
+</div>		
+</body>
+</html>
